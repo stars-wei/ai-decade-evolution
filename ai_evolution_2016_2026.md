@@ -10,8 +10,11 @@
 - 1997-05-11：IBM Deep Blue 战胜 Garry Kasparov，代表搜索 + 专用评估函数在封闭规则博弈中的胜利。
 - 2006-2012：深度学习复兴。Hinton、Bengio、LeCun 等人的神经网络路线重新成为主流。
 - 2012-09：AlexNet 在 ImageNet 上大幅领先，GPU + 大数据 + 深度卷积网络成为视觉 AI 的主干。
+- 2012-2016：CNN/卷积网络分支进入黄金期，VGG、GoogLeNet/Inception、ResNet 等模型推动图像分类、目标检测、分割、OCR、医学影像和自动驾驶感知快速进步。ResNet 是其中的关键转折：它把“更深”从训练负担变成可扩展能力。
 - 2013-2014：word2vec、seq2seq、注意力机制、GAN 出现，为后来的大模型、多模态和生成式 AI 铺路。
-- 2015：TensorFlow 开源；OpenAI 成立；ResNet 出现；深度强化学习在 Atari 等任务上出圈。
+- 2014-2017：RNN/LSTM 分支进入黄金期，seq2seq、Attention、Encoder-Decoder 推动机器翻译、摘要、语音识别、手写识别、时间序列预测和早期聊天机器人。
+- 2014-2020：GAN 分支进入高光期，从 Goodfellow 提出的对抗训练出发，DCGAN、CycleGAN、pix2pix、StyleGAN 等推动图像生成、风格迁移、人脸合成、超分辨率、图像到图像翻译和数据增强。
+- 2015：TensorFlow 开源；OpenAI 成立；何恺明、张翔宇、任少卿、孙剑提出 ResNet，残差连接解决深层网络退化问题，让百层级 CNN 可训练；深度强化学习在 Atari 等任务上出圈。
 
 ## 1. 年表：从 AlphaGo 到 Agent
 
@@ -19,12 +22,12 @@
 
 - 2016-03-09 至 2016-03-15：DeepMind AlphaGo 与李世石五番棋，AlphaGo 4:1 获胜。意义不是“围棋结束”，而是深度学习 + 蒙特卡洛树搜索 + 强化学习证明可处理高维复杂决策。
 - 2016：TensorFlow、Caffe、Theano、Torch、MXNet、CNTK 等框架竞争。最后 TensorFlow 和 PyTorch 路线胜出，Theano/CNTK 等逐渐退出中心。
-- 2016：监督学习、CNN、RNN/LSTM、强化学习是主流叙事；NLP 仍以循环网络、注意力、统计特征和任务微调为主。
+- 2016：监督学习、CNN、RNN/LSTM、强化学习是主流叙事；CNN 是计算机视觉最核心的工程骨干，支撑识别、检测、分割和视觉创业潮；ResNet 在 CVPR 2016 发表并获 Best Paper，残差连接随后成为深度学习通用设计语言；RNN/LSTM 则是 NLP、语音和时间序列的主干，支撑 seq2seq 机器翻译、语音识别和早期对话系统。
 - 2016：中国 AI 创业潮继续升温，商汤、旷视、依图、云从等视觉公司走强；这一分支在安防、金融、手机视觉里壮大，但后来受隐私、监管、商业化和硬件周期约束，热度下降。
 
 ### 2017：Transformer 诞生，政策与产业进入战略竞争
 
-- 2017-06-12：Google 研究者发布论文 *Attention Is All You Need*，提出 Transformer。它抛弃 RNN/CNN 主干，用自注意力并行建模序列，成为之后 GPT、BERT、T5、ViT、扩散模型文本编码器和多模态模型的核心。
+- 2017-06-12：Google 研究者发布论文 *Attention Is All You Need*，提出 Transformer。它抛弃 RNN/CNN 主干，用自注意力并行建模序列，成为之后 GPT、BERT、T5、ViT、扩散模型文本编码器和多模态模型的核心。CNN 并未消失，而是在视觉工程、边缘设备、检测分割和混合架构中继续存在。
 - 2017-07-20：中国国务院发布《新一代人工智能发展规划》，将 AI 上升为国家战略，提出到 2030 年成为世界主要 AI 创新中心。
 - 2017：AlphaGo Zero 展示从自我博弈中学习，强化学习路线继续辉煌，但走出棋类和模拟环境后，样本效率、可控性和现实成本成为瓶颈。
 - 2017：PyTorch 发布后迅速在研究界流行，动态图和易调试体验开始压过 TensorFlow 1.x 的静态图体验。
@@ -55,7 +58,7 @@
 - 2021-01-05：OpenAI 发布 CLIP 和 DALL-E。CLIP 让文本-图像对齐成为通用能力，DALL-E 展示文本生成图像。
 - 2021-06-29：GitHub Copilot 技术预览发布，AI 编程从研究走向 IDE 工作流。
 - 2021-07-15：AlphaFold2 论文发表于 Nature；2021-07-22，DeepMind/EMBL-EBI 发布 AlphaFold 蛋白结构数据库。
-- 2021：扩散模型开始取代 GAN 成为高质量图像生成主线；GAN 仍用于特定视觉生成，但“文本到图像”的主舞台逐渐转向 diffusion。
+- 2021：扩散模型开始取代 GAN 成为高质量图像生成主线；GAN 的优势在于推理速度快、特定域图像质量高、可做风格迁移和图像翻译，但“文本到图像”的主舞台逐渐转向 diffusion。
 
 ### 2022：生成式 AI 爆发年
 
@@ -106,6 +109,8 @@
 - 2026-02-12：Google 发布 Gemini 3 Deep Think，进一步面向科学、工程和复杂推理。
 - 2026-04：Anthropic 系统卡列出 Claude Opus 4.7 等 2026 模型更新，Claude 家族继续强化 coding/agent/safety。
 - 2026-04-23：OpenAI 发布 GPT-5.5；2026-04-24 API 可用，强调编码、计算机使用、研究和复杂文档/表格工作。
+- 2026-05-11：MIT 等研究者发布论文 *ELF: Embedded Language Flows*，作者包括 Keya Hu、Linlu Qiu、Yiyang Lu、Hanhong Zhao、Tianhong Li、Yoon Kim、Jacob Andreas、何恺明。ELF 在连续嵌入空间中使用连续时间 Flow Matching 生成语言，只在最终时间步映射回离散 token，显示出用更少采样步获得更好生成质量的潜力。
+- 2026-05：ByteDance Seed 开源 Cola DLM（Continuous Latent Diffusion Language Model），尝试用连续潜空间扩散来生成文本：先在潜变量空间规划全局语义，再解码为具体词序列。它与 ELF 一起代表“扩散/流式语言模型”对自回归 LLM 路线的研究性挑战。
 - 2026-05-19：Google I/O 2026 继续把 Gemini 深度嵌入 Search、YouTube、Android、XR/眼镜和订阅服务。
 - 2026 截至 05-26：前沿竞争焦点从单一聊天机器人转向：模型路由、工具调用、浏览器/电脑使用、长上下文记忆、代码代理、企业知识库、科学发现、安全评测和监管前置测试。
 
@@ -120,13 +125,15 @@
 - AI for Science：AlphaFold 带动蛋白、材料、药物、天气、数学和实验设计。
 - 开放权重生态：Llama、Mistral、Qwen、DeepSeek、Kimi 等形成与闭源 API 并行的路线。
 - Agent/工具调用：从 function calling、ReAct、AutoGPT 实验，走向 Operator、Deep Research、Claude Code、Codex 等产品。
+- 扩散/流式语言模型：从图像扩散模型和 Flow Matching 的成功延伸到文本生成，ELF 在连续嵌入空间中建模语言流，Cola DLM 在连续潜变量空间中规划语义；截至 2026 年仍主要是研究分支，尚未取代自回归 LLM。
 
 ### 退潮或边缘化的分支
 
 - 传统专家系统：可解释但脆弱，维护成本高，未能适应开放世界。
 - 纯规则聊天机器人：被大语言模型和检索增强生成取代。
-- RNN/LSTM 作为 NLP 主干：仍在部分低延迟/时序场景存在，但中心位置被 Transformer 取代。
-- GAN 作为通用图像生成主线：被扩散模型压过，但仍在特定实时生成、风格迁移、数据增强中存在。
+- CNN 作为通用视觉唯一主干：2012-2020 年长期强势，后来被 ViT、视觉语言模型和多模态基础模型分流；但 CNN 仍在移动端、边缘视觉、检测分割、医学影像和高效推理中保有生命力。
+- RNN/LSTM 作为 NLP 主干：2014-2017 年是序列建模核心路线，擅长按时间步处理文本、语音和传感器数据；2017 年后中心位置被 Transformer 取代，但仍在流式语音、边缘设备、低延迟时间序列、小模型预测和部分控制系统中存在。
+- GAN 作为通用图像生成主线：2014-2020 年长期代表生成式视觉前沿，StyleGAN 尤其推动高质量人脸与可控潜空间编辑；2021 年后被扩散模型在文本到图像、可控编辑和开放生态上压过，但仍在实时生成、风格迁移、超分辨率、图像翻译和数据增强中存在。
 - 早期 AutoML/NAS 热潮：没有消失，但被更粗暴有效的规模化预训练、模型蒸馏和工程调参吸收。
 - 早期 AutoGPT 式 agent：概念重要，但未经约束的循环代理不稳定；后来被工具权限、工作流、评测、沙箱和人工确认机制重构。
 
@@ -136,6 +143,7 @@
 - Google DeepMind：Demis Hassabis、John Jumper、Pushmeet Kohli 等；路线包括 AlphaGo、AlphaFold、Gemini、AI for Science 和搜索/Android/Workspace 集成。
 - Anthropic：Dario Amodei、Daniela Amodei、Jared Kaplan 等；路线是 Claude、Constitutional AI、长上下文、安全分级、Claude Code。
 - Meta AI：Yann LeCun、Joelle Pineau、FAIR 团队；最大影响是 Llama 开放权重生态。
+- 何恺明：ResNet 主要作者之一，提出残差学习，把超深 CNN 训练变成可行工程路线；其思想后来影响检测、分割、生成模型、Transformer 残差结构和几乎所有现代深层网络。
 - NVIDIA：Jensen Huang；从 GPU 供应商变成 AI 基础设施核心公司，CUDA、H100/B系列、网络、推理栈和数据中心构成算力底座。
 - Microsoft/GitHub：Azure OpenAI、Copilot、Office Copilot、GitHub Copilot，把生成式 AI 嵌进企业软件。
 - 中国公司：百度文心、阿里 Qwen、腾讯混元、字节豆包、智谱 GLM、月之暗面 Kimi、DeepSeek 等，形成中文、开源权重、长上下文和低成本推理路线。
@@ -172,3 +180,6 @@
 - EU AI Act：European Parliament/Council AI Act records, 2024.
 - OpenAI 2025-2026：Operator, Deep Research, GPT-4.1, o3/o4-mini, GPT-5, GPT-5.5 official announcements.
 - 中国 AI：Stanford DigiChina translation of China’s 2017 AI plan；Baidu ERNIE Bot 2023；Alibaba Qwen/Tongyi Qianwen 2023；Moonshot/Kimi 2023；DeepSeek-R1 2025.
+
+- ELF：Hu et al., *ELF: Embedded Language Flows*, arXiv 2605.10938, 2026-05-11.
+- ResNet：He et al., *Deep Residual Learning for Image Recognition*, arXiv 2015-12-10 / CVPR 2016 Best Paper.

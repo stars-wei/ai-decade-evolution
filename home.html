@@ -606,8 +606,11 @@
         <article class="tile"><div class="date">1950s-1980s</div><h3>符号主义与专家系统</h3><p>可解释、规则明确，但维护成本高，开放世界泛化差。</p></article>
         <article class="tile"><div class="date">1997-05-11</div><h3>Deep Blue</h3><p>搜索与专用评估函数在封闭博弈中达到公众里程碑。</p></article>
         <article class="tile"><div class="date">2012-09</div><h3>AlexNet</h3><p>ImageNet 突破让 GPU + CNN 成为视觉 AI 主干。</p></article>
+        <article class="tile"><div class="date">2012-2016</div><h3>CNN 黄金期</h3><p>VGG、Inception、ResNet 推动分类、检测、分割、OCR 与医学影像落地。</p></article>
         <article class="tile"><div class="date">2013-2014</div><h3>word2vec / seq2seq / GAN</h3><p>表示学习、序列建模、生成式视觉各自点火。</p></article>
-        <article class="tile"><div class="date">2015</div><h3>TensorFlow / OpenAI / ResNet</h3><p>框架、机构与深层网络能力共同加速。</p></article>
+        <article class="tile"><div class="date">2014-2020</div><h3>GAN 高光期</h3><p>DCGAN、CycleGAN、pix2pix、StyleGAN 推动图像生成、风格迁移、人脸合成与超分辨率。</p></article>
+        <article class="tile"><div class="date">2014-2017</div><h3>RNN / LSTM 黄金期</h3><p>seq2seq 与 Attention 推动机器翻译、语音识别、摘要、时间序列和早期对话系统。</p></article>
+        <article class="tile"><div class="date">2015-12-10</div><h3>何恺明 / ResNet</h3><p>残差连接让百层级 CNN 可训练，CVPR 2016 获 Best Paper，影响几乎所有现代深层网络。</p></article>
         <article class="tile"><div class="date">长期积累</div><h3>Hinton / Bengio / LeCun</h3><p>深度学习路线重新成为主流，并在产业里找到了入口。</p></article>
       </div>
     </section>
@@ -753,6 +756,8 @@
                 <li>2026-02-12，Google 发布 Gemini 3 Deep Think，面向科学、工程与复杂推理。</li>
                 <li>2026-04，Anthropic 继续强化 Claude 家族的 coding、agent 与 safety。</li>
                 <li>2026-04-23，OpenAI 发布 GPT-5.5；04-24 API 可用，强调编码、计算机使用、研究和复杂文档工作。</li>
+                <li>2026-05-11，MIT 等研究者发布 ELF: Embedded Language Flows，在连续嵌入空间中用 Flow Matching 生成语言，只在最后一步映射回 token。</li>
+                <li>2026-05，ByteDance Seed 开源 Cola DLM，探索连续潜空间扩散语言模型；它与 ELF 一起构成对自回归 LLM 的研究性挑战。</li>
                 <li>截至 2026-05-26，竞争焦点转向模型路由、工具调用、浏览器/电脑使用、长上下文、代码代理、企业知识库与安全评测。</li>
               </ul>
             </div>
@@ -775,10 +780,13 @@
         <article class="branch"><h3>扩散模型 <small>壮大</small></h3><p>从图像生成扩展到视频、3D、音频、编辑和设计工具。</p></article>
         <article class="branch"><h3>AI for Code <small>壮大</small></h3><p>从自动补全走向代码库理解、修 bug、测试、重构与长时 agent。</p></article>
         <article class="branch"><h3>AI for Science <small>壮大</small></h3><p>AlphaFold 带动蛋白、材料、药物、天气、数学和实验设计。</p></article>
+        <article class="branch"><h3>ELF / Embedded Language Flows <small>萌芽</small></h3><p>何恺明等提出的连续嵌入空间语言流模型，用 Flow Matching 生成文本，只在最终步骤离散化；截至 2026 年仍是研究分支。</p></article>
         <article class="branch"><h3>开放权重生态 <small>壮大</small></h3><p>Llama、Mistral、Qwen、DeepSeek、Kimi 等形成闭源 API 的平行路线。</p></article>
+        <article class="branch"><h3>DLM / 扩散语言模型 <small>萌芽</small></h3><p>ELF 与 Cola DLM 分别沿连续嵌入空间、连续潜变量空间探索非自回归文本生成；截至 2026 年仍是研究分支。</p></article>
         <article class="branch faded"><h3>专家系统 <small>退潮</small></h3><p>可解释但脆弱，维护成本高，难适应开放世界。</p></article>
-        <article class="branch faded"><h3>RNN/LSTM 主干 <small>边缘化</small></h3><p>仍在部分时序场景存在，但 NLP 中心位置被 Transformer 替代。</p></article>
-        <article class="branch faded"><h3>GAN 通用生图 <small>退潮</small></h3><p>被扩散模型压过，但在实时生成、风格迁移、数据增强中仍有位置。</p></article>
+        <article class="branch faded"><h3>CNN / 卷积网络 <small>被吸收</small></h3><p>从视觉 AI 的绝对主干，变成与 ViT、多模态模型并存的高效工程路线；在移动端、边缘视觉、检测分割和医学影像中仍有生命力。</p></article>
+        <article class="branch faded"><h3>RNN/LSTM 主干 <small>边缘化</small></h3><p>曾是文本、语音和时间序列建模核心；Transformer 之后退到流式语音、边缘设备、低延迟预测和部分控制系统。</p></article>
+        <article class="branch faded"><h3>GAN 通用生图 <small>退潮</small></h3><p>曾代表生成式视觉前沿，StyleGAN 带来高质量人脸和潜空间编辑；扩散模型崛起后退到实时生成、风格迁移、超分辨率、图像翻译和数据增强。</p></article>
         <article class="branch faded"><h3>早期 AutoGPT <small>重构</small></h3><p>概念重要，但无约束循环代理不稳定，后来被权限、工作流、评测和沙箱吸收。</p></article>
       </div>
     </section>
@@ -796,6 +804,7 @@
         <article class="company"><div><div class="mark"></div><b>Google DeepMind</b><p>Demis Hassabis、John Jumper 等；AlphaGo、AlphaFold、Gemini、AI for Science，以及 Search、Android、Workspace 集成。</p></div></article>
         <article class="company"><div><div class="mark"></div><b>Anthropic</b><p>Dario Amodei、Daniela Amodei、Jared Kaplan 等；Claude、Constitutional AI、长上下文、安全分级、Claude Code。</p></div></article>
         <article class="company"><div><div class="mark"></div><b>Meta AI</b><p>Yann LeCun、Joelle Pineau、FAIR；Llama 开放权重生态成为最大产业影响。</p></div></article>
+        <article class="company"><div><div class="mark"></div><b>何恺明</b><p>ResNet 主要作者之一，残差学习让超深 CNN 训练成为可行路线，并影响检测、分割、生成模型和 Transformer 残差结构。</p></div></article>
         <article class="company"><div><div class="mark"></div><b>NVIDIA</b><p>Jensen Huang；CUDA、H100/B 系列、网络、推理栈和数据中心构成算力底座。</p></div></article>
         <article class="company"><div><div class="mark"></div><b>中国 AI 公司</b><p>百度文心、阿里 Qwen、腾讯混元、字节豆包、智谱 GLM、月之暗面 Kimi、DeepSeek 等。</p></div></article>
       </div>
@@ -835,6 +844,11 @@
         <div class="source-card"><a href="https://ai.meta.com/blog/meta-llama-3/">Meta Llama 3</a></div>
         <div class="source-card"><a href="https://digichina.stanford.edu/work/full-translation-chinas-new-generation-artificial-intelligence-development-plan-2017/">China AI Plan · DigiChina</a></div>
         <div class="source-card"><a href="https://openai.com/index/introducing-gpt-5/">OpenAI GPT-5</a></div>
+        <div class="source-card"><a href="https://huggingface.co/ByteDance-Seed/Cola-DLM">ByteDance Seed Cola DLM</a></div>
+        <div class="source-card"><a href="https://arxiv.org/abs/2605.06548">Continuous Latent Diffusion Language Model · arXiv</a></div>
+        <div class="source-card"><a href="https://arxiv.org/abs/2605.10938">ELF · Embedded Language Flows</a></div>
+        <div class="source-card"><a href="https://huggingface.co/papers/2605.10938">ELF · Hugging Face Papers</a></div>
+        <div class="source-card"><a href="https://arxiv.org/abs/1512.03385">ResNet · Deep Residual Learning</a></div>
       </div>
     </section>
   </main>
