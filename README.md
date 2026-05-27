@@ -17,7 +17,6 @@ ai-decade-evolution/
 ├── index.html                           # 网页主程序 (毛玻璃交互式编年史单页)
 ├── style.css                            # 网页视觉样式表 (暗黑太空科技美学)
 ├── ai_evolution_history_2016_2026.md    # 核心文档：黄金十年演化史全景编年史报告
-├── walkthrough.md                       # 项目开发与实现逻辑复盘说明
 ├── README.md                            # 项目说明文档
 └── images/                              # AI 生成的主题艺术插图
     ├── banner.png                       # 顶部抽象神经网络进化横幅
